@@ -5,10 +5,14 @@ import {
   Menu, Play, Quote, Sparkles, Users, Video, X
 } from 'lucide-react';
 
+const imagePath = (fileName) => {
+  return `${import.meta.env.BASE_URL}images/${fileName}`;
+};
+
 const heroSlides = [
-  '/images/hero-background.png',
-  '/images/hero-golden-collage.png',
-  '/images/hero-story-collage.jpg',
+  imagePath('hero-background.png'),
+  imagePath('hero-golden-collage.png'),
+  imagePath('hero-story-collage.jpg'),
 ];
 
 const photos = [
